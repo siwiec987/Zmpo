@@ -1,27 +1,3 @@
-# import cv2 
-# from face_recognition import recognize_face
-# from deepface import DeepFace
-
-# read image 
-# img = cv2.imread('images/aaa.jpg') 
-# img = recognize_face(img)
-
-# cv2.imshow('aaa', img)
-# cv2.waitKey(0)
-
-# video = cv2.VideoCapture(0)
-
-# while True:
-#     success, frame = video.read()
-#     frame = recognize_face(frame)
-#     cv2.imshow('Video', frame)
-#     key = cv2.waitKey(1)
-#     if key != -1:
-#         break 
-
-# video.release()
-# cv2.destroyAllWindows()
-
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
