@@ -6,7 +6,7 @@ import tkinter as tk
 
 def recognize_from_pic(path):
     img = cv2.imread(path)
-    # img = resize_image(img, 600, 400)
+    img = resize_image(img, 600, 400)
     img = recognize_face(img)
 
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
