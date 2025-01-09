@@ -4,8 +4,8 @@ from deepface import DeepFace
 from PIL import Image, ImageTk
 import tkinter as tk
 
-def recognize_from_pic(path):
-    img = cv2.imread(path)
+def recognize_from_pic(img):
+    # img = cv2.imread(path)
     img = resize_image(img, 600, 400)
     img = recognize_face(img)
 
@@ -26,12 +26,12 @@ def resize_image(img, width, height):
     new_width = old_width * resize_factor
     new_height = old_height * resize_factor
 
-    print("\n\nOld wymiary")
-    print(old_width)
-    print(old_height)
-    print("\n\nNew wymiary")
-    print(new_width)
-    print(new_height)
+    # print("\n\nOld wymiary")
+    # print(old_width)
+    # print(old_height)
+    # print("\n\nNew wymiary")
+    # print(new_width)
+    # print(new_height)
 
     img = cv2.resize(img, (int(new_width), int(new_height)))
 
