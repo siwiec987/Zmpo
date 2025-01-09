@@ -1,7 +1,7 @@
+import cv2
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog, PhotoImage
-import cv2
 from recognize_from_pic import recognize_from_pic
 
 img_label = None
@@ -26,7 +26,7 @@ def select_img():
         img = recognize_from_pic(img)
         show_img(img)
     else:
-        print("Pusto")
+        print("Nothing selected.")
         return None
     
 def show_img(processed_img):
