@@ -60,7 +60,6 @@ def recognize_from_vid():
 
     def process_frame():
         if not video_running:
-            # video.release()
             return
 
         success, frame = video.read()
